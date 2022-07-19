@@ -1,13 +1,11 @@
-local StarId = {
-	[277726065] = true,
-}
+local StarId = {}
 
-local DiamondId = {
-	[209186817] = true,
-}
+local DiamondId = {}
 
 local Blacklisted = {
 	[12364645] = true,
+	[209186817] = true,
+	[277726065] = true,
 }
 
 function premium()
