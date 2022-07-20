@@ -1,6 +1,4 @@
-local ModId = {
-    [209186817] = true,
-}
+local ModId = {}
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
