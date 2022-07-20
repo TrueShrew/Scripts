@@ -1,13 +1,8 @@
+local ModId = {}
+
 local StarId = {}
 
-local DiamondId = {
-	[209186817] = true,
-{
-
-local Blacklisted = {
-	[12364645] = true,
-	[277726065] = true,
-}
+local Blacklisted = {}
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
@@ -17,10 +12,10 @@ function premium()
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
 				end
 			end
-		elseif DiamondId[v.UserId] then
+		elseif ModId[v.UserId] then
 			if v.Character then
 				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
 				end
 			end
 		elseif Blacklisted[v.UserId] then
@@ -32,7 +27,7 @@ function premium()
 		elseif v.Character then
 			if v.Character.Parent.Name == 'Players' then
 				if not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🙂]'..v.DisplayName)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]'..v.DisplayName)
 				end
 			end
 		end
