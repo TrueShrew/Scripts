@@ -1,10 +1,11 @@
 local StarId = {}
 
-local DiamondId = {}
+local DiamondId = {
+	[209186817] = true,
+{
 
 local Blacklisted = {
 	[12364645] = true,
-	[209186817] = true,
 	[277726065] = true,
 }
 
