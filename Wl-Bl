@@ -21,7 +21,7 @@ function premium()
 		elseif Blacklisted[v.UserId] then
 			if v.Character then
 				if v.Character.Parent.Name == 'Players' then
-					game:GetService('Players').LocalPlayer:Kick('DOWN')
+					game:GetService('Players').LocalPlayer:Kick('BANNED')
 				end
 			end
 		elseif v.Character then
