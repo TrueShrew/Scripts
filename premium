@@ -1,0 +1,4 @@
+StarId = { 
+	[1] = true,
+}
+return StarId
